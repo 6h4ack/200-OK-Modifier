@@ -5,7 +5,8 @@ We can add the plugin from the Burp Extensions section.
 ## How to use
 Once installed, we can enable the "Change response to 200 OK" option from the Extensions section.
 
-![image](https://github.com/6h4ack/200-OK-Modifier/assets/66249467/cefe1577-e2e2-4423-b3e0-9265b2c7d8d3)
+![image](https://github.com/6h4ack/200-OK-Modifier/assets/66249467/72932fe7-9655-47d4-b3e3-26d3675dc2fd)
+
 
 If the response code differs from our desired 200 OK, we will adapt it.
 
