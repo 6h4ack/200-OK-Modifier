@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-200 OK Modifier by /6h4ack (@6h4ack)
-"""
 from burp import IBurpExtender
 from burp import IContextMenuFactory
 from burp import IHttpListener
@@ -42,7 +39,7 @@ class BurpExtender(IBurpExtender, IContextMenuFactory, IHttpListener):
         if self.enabled and not messageIsRequest:
             responseBytes = messageInfo.getResponse()
             responseInfo = self._helpers.analyzeResponse(responseBytes)
-            if responseInfo.getStatusCode() != 200:a
+            if responseInfo.getStatusCode() != 200:
                 headers = list(responseInfo.getHeaders())
                 statusCode = responseInfo.getStatusCode()
                 headers[0] = "HTTP/2 200 OK OriginalCodeWas: {}".format(statusCode)
